@@ -32,3 +32,14 @@
     border-color: darken(#0074d9, 15%);
   }
 }
+
+.button-danger {
+  color: #fff;
+  background-color: #ff4136;
+  border-color: darken(#ff4136, 10%);
+
+  &:hover {
+    background-color: darken(#ff4136, 10%);
+    border-color: darken(#ff4136, 15%);
+  }
+}
