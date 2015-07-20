@@ -4,7 +4,7 @@ This is a small repository to demonstrate how specific methods for building CSS 
 
 ## Why
 
-All the build tools and preprocessors in the world can't save you from one simple fact: your compiled CSS matters most. It's what all your users will download when they come to your site.
+All the build tools and preprocessors in the world can't save you from one simple fact: your compiled CSS matters most. It's what all your users will download when they come to your site. In many cases, the preprocessor features we want to use most can end up doing more harm than good.
 
 ## What
 
@@ -52,16 +52,22 @@ Instead of reusing an existing class, uses `@extend` to pull in shared syles fro
 
 ## Results
 
-While there are several interesting statistics about your CSS, I only care about two of them here: total selectors and total declarations. These two are most significantly affected by the changes in each method.
+While there are several interesting statistics about your CSS, I only care about two of them here: total selectors and total declarations. These two are most significantly affected by the changes in each method. These stats are reported in [`stats.md`](stats.md).
 
 | Method | Total selectors | Total declarations |
 | --- | --- | --- |
-| Original (control) | 6 | 19 |
-| **Base class** | **8** | **20** |
-| Extend | 14 | 20 |
-| Extend w/ placeholder | 12 | 20 |
+| **Original (control)** | 6 | 19 |
+| **Base class** | 8 | 20 |
+| **Extend** | 14 | 20 |
+| **Extend w/ placeholder** | 12 | 20 |
 
-Winner?
+You can look at these numbers in a few ways:
+
+- The **original demo**, which uses CSS that overrides the colors of default gray button, produces the least amount of compiled CSS. It's not the best though because it means overriding some CSS (e.g., every blue button includes specific styles to change the button from gray to blue).
+
+- The **base class demo** is arguably the best since it produces the most dry and reusable compiled CSS possible, despite having more selectors.
+
+- **Both extend demos** generate the same number of declarations as the base class demo, but with 55-65% more selectors.
 
 ## License and copyright
 
