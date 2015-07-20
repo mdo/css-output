@@ -69,7 +69,7 @@ You can look at these numbers in a few ways:
 
 - **Both `@extend` demos generate the same number of declarations as the base class, but with 55-65% more selectors.** These features, used with an exsiting class or a placeholder, generate *more* compiled CSS than any of the others.
 
-Bottom line? Writing CSS components with a shared base class will likely produce lean, DRY CSS in nearly every instance.
+Bottom line? Writing CSS components with a shared base class will likely produce leaner, DRY-er compiled CSS.
 
 ## License and copyright
 
