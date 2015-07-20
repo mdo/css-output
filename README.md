@@ -8,6 +8,9 @@ All the build tools and preprocessors in the world can't save you from one simpl
 
 ## What
 
+<img width="448" alt="screen shot 2015-07-20 at 1 02 21 pm" src="https://cloud.githubusercontent.com/assets/98681/8786621/08732d30-2ee4-11e5-9311-afc46e3ede92.png">
+
+
 Four demos are included, each including a family of three `<button>`s styled using different CSS techniques. Demo Sass files are compiled via Gulp (see the local `Gulpfile.js`) and stats are output to `stats.md` via [Parker](https://github.com/katiefenn/parker).
 
 #### [Original (control)](01-original/original.scss)
