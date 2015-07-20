@@ -6,23 +6,26 @@
   background-color: #eee;
   border: 0.1rem solid #d4d4d4;
   border-radius: .25rem; }
-  .btn:hover {
-    cursor: pointer;
-    background-color: #d4d4d4;
-    border-color: #c8c8c8; }
+
+.btn:hover {
+  cursor: pointer;
+  background-color: #d4d4d4;
+  border-color: #c8c8c8; }
 
 .btn-primary {
   color: #fff;
   background-color: #0074d9;
   border-color: #0059a6; }
-  .btn-primary:hover {
-    background-color: #0059a6;
-    border-color: #004b8c; }
+
+.btn-primary:hover {
+  background-color: #0059a6;
+  border-color: #004b8c; }
 
 .btn-danger {
   color: #fff;
   background-color: #ff4136;
   border-color: #ff1103; }
-  .btn-danger:hover {
-    background-color: #ff1103;
-    border-color: #e90d00; }
+
+.btn-danger:hover {
+  background-color: #ff1103;
+  border-color: #e90d00; }

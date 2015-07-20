@@ -550,3 +550,39 @@ Last generated: 07/20/2015, 14:06:13 by [gulp-parker](https://github.com/PavelDe
 * * *
 
 Last generated: 07/20/2015, 14:06:13 by [gulp-parker](https://github.com/PavelDemyanenko/gulp-parker).
+
+### /Users/mdo/work/css-output/01-original/original.css
+
+- **Total Selectors:** 6
+- **Total Declarations:** 20
+
+* * *
+
+Last generated: 07/20/2015, 14:17:28 by [gulp-parker](https://github.com/PavelDemyanenko/gulp-parker).
+
+### /Users/mdo/work/css-output/02-base/base.css
+
+- **Total Selectors:** 8
+- **Total Declarations:** 21
+
+* * *
+
+Last generated: 07/20/2015, 14:17:28 by [gulp-parker](https://github.com/PavelDemyanenko/gulp-parker).
+
+### /Users/mdo/work/css-output/03-extend/extend.css
+
+- **Total Selectors:** 14
+- **Total Declarations:** 21
+
+* * *
+
+Last generated: 07/20/2015, 14:17:28 by [gulp-parker](https://github.com/PavelDemyanenko/gulp-parker).
+
+### /Users/mdo/work/css-output/04-placeholder/placeholder.css
+
+- **Total Selectors:** 12
+- **Total Declarations:** 21
+
+* * *
+
+Last generated: 07/20/2015, 14:17:28 by [gulp-parker](https://github.com/PavelDemyanenko/gulp-parker).
