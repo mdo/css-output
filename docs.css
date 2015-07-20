@@ -1,0 +1,18 @@
+/*
+ * CSS for page layout and more
+ */
+
+html {
+  font-size: 16px;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 2rem;
+  font-size: 1rem;
+}
+
+button {
+  font-family: inherit;
+}

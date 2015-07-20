@@ -1,0 +1,12 @@
+{
+  "name": "css-output-tests",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mdo/css-output.git"
+  },
+  "devDependencies": {
+    "gulp": "~3.9.0",
+    "gulp-sass": "~2.0.4",
+    "gulp-parker": "~0.1.2"
+  }
+}

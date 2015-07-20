@@ -1,13 +1,4 @@
-// Markup:
-//
-// <button class="button">Button</button>
-// <button class="button button-primary">Button</button>
-// <button class="button button-danger">Button</button>
-//
-// Total selectors:    6
-// Total declarations: 19
-
-.button {
+.btn {
   display: inline-block;
   padding: .5rem 1rem;
   font-size: 1rem;
@@ -22,7 +13,7 @@
   }
 }
 
-.button-primary {
+.btn-primary {
   color: #fff;
   background-color: #0074d9;
   border-color: darken(#0074d9, 10%);
@@ -33,7 +24,7 @@
   }
 }
 
-.button-danger {
+.btn-danger {
   color: #fff;
   background-color: #ff4136;
   border-color: darken(#ff4136, 10%);
