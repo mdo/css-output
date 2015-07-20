@@ -71,6 +71,10 @@ You can look at these numbers in a few ways:
 
 Bottom line? Writing CSS components with a shared base class will likely produce leaner, DRY-er compiled CSS.
 
+## Feedback
+
+Feel free to open an issue or pull request to suggest any changes or improvements.
+
 ## License and copyright
 
 Licensed MIT. Copyright @mdo.
