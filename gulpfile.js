@@ -3,8 +3,9 @@ var sass = require('gulp-sass');
 var parker = require('gulp-parker');
 
 // Compile SCSS
-gulp.task('build', function() {
-  gulp.src('**/*.scss')
+gulp.task('sass', function() {
+  gulp.src('./{01-original,02-base,03-extend,04-placeholder}**/*.scss')
+    // .pipe(sass({ outputStyle: 'expanded' }))
     .pipe(sass().on('error', sass.logError))
     .pipe(gulp.dest('.'));
 });
@@ -23,4 +24,4 @@ gulp.task('parker', function() {
 });
 
 // Single default task
-gulp.task('default', ['build', 'parker']);
+gulp.task('default', ['sass', 'parker']);
