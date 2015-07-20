@@ -8,7 +8,7 @@ All the build tools and preprocessors in the world can't save you from one simpl
 
 ## What
 
-Each demo includes a family of three HTML buttons styled using different techniques. Demo Sass files are compiled via Gulp (see the local `Gulpfile.js`) and their stats are output to `stats.md` via [Parker](https://github.com/katiefenn/parker).
+Four demos are included, each including a family of three `<button>`s styled using different CSS techniques. Demo Sass files are compiled via Gulp (see the local `Gulpfile.js`) and stats are output to `stats.md` via [Parker](https://github.com/katiefenn/parker).
 
 #### [Original (control)](01-original/original.scss)
 
