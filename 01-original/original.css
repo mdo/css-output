@@ -4,7 +4,8 @@
   font-size: 1rem;
   color: #333;
   background-color: #eee;
-  border: 0.1rem solid #d4d4d4; }
+  border: 0.1rem solid #d4d4d4;
+  border-radius: .25rem; }
   .btn:hover {
     cursor: pointer;
     background-color: #d4d4d4;

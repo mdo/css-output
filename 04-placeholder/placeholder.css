@@ -2,7 +2,8 @@
   display: inline-block;
   padding: 0.5rem 1rem;
   font-size: 1rem;
-  border: .1rem solid; }
+  border: .1rem solid;
+  border-radius: .25rem; }
   .btn-default:hover, .btn-primary:hover, .btn-danger:hover {
     cursor: pointer; }
 
