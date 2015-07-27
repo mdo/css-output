@@ -52,16 +52,27 @@ Instead of reusing an existing class, uses `@extend` to pull in shared syles fro
 <button type="button" class="btn-danger">Danger button</button>
 ```
 
+#### [Mixin](05-mixin/mixin.scss)
+
+Uses a mixin to compile styles based on color arguments.
+
+```html
+<button type="button" class="btn-default">Button</button>
+<button type="button" class="btn-primary">Primary button</button>
+<button type="button" class="btn-danger">Danger button</button>
+```
+
 ## Results
 
 While there are several interesting statistics about your CSS, two really stand out in the context of these demos—total selectors and total declarations—as these are the most significantly affected by the methods in these demos. These stats are reported in [`stats.md`](stats.md).
 
-| Method | Total selectors | Total declarations |
-| --- | --- | --- |
-| **Original (control)** | 6 | 20 |
-| **Base class** | 8 | 21 |
-| **Extend** | 14 | 21 |
-| **Extend w/ placeholder** | 12 | 21 |
+| Method | Total selectors | Total declarations | gzip filesize (bytes)
+| --- | --- | --- | --- |
+| **Original (control)** | 6 | 20 | 231 |
+| **Base class** | 8 | 21 | 242 |
+| **Extend** | 14 | 21 | 258 |
+| **Extend w/ placeholder** | 12 | 21 | 256 |
+| **Mixins**  | 6 | 33 | 249 |
 
 You can look at these numbers in a few ways:
 
@@ -71,9 +82,11 @@ You can look at these numbers in a few ways:
 
 - **The base class demo is arguably the best as it produces the most DRY and reusable, component-based compiled CSS.** Yes, it has more selectors, but that's because it requires an additional class—`.btn-default`—to avoid any overrides.
 
-- **Both `@extend` demos generate the same number of declarations as the base class, but with 55-65% more selectors.** These features, used with an exsiting class or a placeholder, generate *more* compiled CSS than any of the others.
+- **Both `@extend` demos generate the same number of declarations as the base class, but with 55-65% more selectors.** These features, used with an existing class or a placeholder, generate *more* compiled CSS than any of the others.
 
-**Bottom line?** Writing CSS components with a shared base class will likely produce leaner, DRY-er compiled CSS.
+- **Aside from the original, the mixin demo sends the smallest file "down the wire."** While the compiled CSS may be repetitive, the gzip algorithm loves repetition. This solution may work best if you're concerned about developer efficiency and filesize.
+
+**Bottom line?** Writing CSS components with a shared base class will likely produce leaner, DRY-er compiled CSS with a small gizpped filesize.
 
 ## Feedback
 

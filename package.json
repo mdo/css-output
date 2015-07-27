@@ -6,7 +6,10 @@
   },
   "devDependencies": {
     "gulp": "~3.9.0",
-    "gulp-sass": "~2.0.4",
-    "gulp-parker": "~0.1.2"
+    "gulp-gzip": "^1.2.0",
+    "gulp-minify-css": "^1.2.0",
+    "gulp-parker": "~0.1.2",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "~2.0.4"
   }
 }
