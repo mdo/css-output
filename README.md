@@ -52,7 +52,7 @@ Instead of reusing an existing class, uses `@extend` to pull in shared syles fro
 <button type="button" class="btn-danger">Danger button</button>
 ```
 
-#### [Base class](02-base/base.scss)
+#### [Base class with mixin](05-base-mixin/base-mixin.scss)
 
 Using a mixin for only the dynamic properties we can achieve the exact same output as the base class method, but with 10 fewer lines of SCSS.
 
