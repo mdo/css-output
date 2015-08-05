@@ -4,7 +4,7 @@ var parker = require('gulp-parker');
 
 // Compile SCSS
 gulp.task('sass', function() {
-  gulp.src('./{01-original,02-base,03-extend,04-placeholder}**/*.scss')
+  gulp.src('./{01-original,02-base,03-extend,04-placeholder,05-base-mixin}**/*.scss')
     .pipe(sass({ outputStyle: 'expanded' }))
     .pipe(sass().on('error', sass.logError))
     .pipe(gulp.dest('.'));
@@ -12,7 +12,7 @@ gulp.task('sass', function() {
 
 // Collect CSS stats
 gulp.task('parker', function() {
-  return gulp.src('./{01-original,02-base,03-extend,04-placeholder}**/*.css')
+  return gulp.src('./{01-original,02-base,03-extend,04-placeholder,05-base-mixin}**/*.css')
     .pipe(parker({
       file: 'stats.md',
       title: 'Compiled CSS stats',
