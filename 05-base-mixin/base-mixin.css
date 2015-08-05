@@ -1,0 +1,36 @@
+.btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: .1rem solid;
+  border-radius: .25rem; }
+
+.btn:hover {
+  cursor: pointer; }
+
+.btn-default {
+  color: #333;
+  background-color: #eee;
+  border-color: #d4d4d4; }
+
+.btn-default:hover {
+  background-color: #d4d4d4;
+  border-color: #c8c8c8; }
+
+.btn-primary {
+  color: #fff;
+  background-color: #0074d9;
+  border-color: #0059a6; }
+
+.btn-primary:hover {
+  background-color: #0059a6;
+  border-color: #004b8c; }
+
+.btn-danger {
+  color: #fff;
+  background-color: #ff4136;
+  border-color: #ff1103; }
+
+.btn-danger:hover {
+  background-color: #ff1103;
+  border-color: #e90d00; }

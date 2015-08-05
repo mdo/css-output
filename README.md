@@ -52,6 +52,16 @@ Instead of reusing an existing class, uses `@extend` to pull in shared syles fro
 <button type="button" class="btn-danger">Danger button</button>
 ```
 
+#### [Base class](02-base/base.scss)
+
+Using a mixin for only the dynamic properties we can achieve the exact same output as the base class method, but with 10 fewer lines of SCSS.
+
+```html
+<button type="button" class="btn btn-default">Button</button>
+<button type="button" class="btn btn-primary">Primary button</button>
+<button type="button" class="btn btn-danger">Danger button</button>
+```
+
 ## Results
 
 While there are several interesting statistics about your CSS, two really stand out in the context of these demos—total selectors and total declarations—as these are the most significantly affected by the methods in these demos. These stats are reported in [`stats.md`](stats.md).
@@ -62,6 +72,7 @@ While there are several interesting statistics about your CSS, two really stand 
 | **Base class** | 8 | 21 |
 | **Extend** | 14 | 21 |
 | **Extend w/ placeholder** | 12 | 21 |
+| **Base class w/ mixin** | 8 | 21 |
 
 You can look at these numbers in a few ways:
 
@@ -73,7 +84,7 @@ You can look at these numbers in a few ways:
 
 - **Both `@extend` demos generate the same number of declarations as the base class, but with 55-65% more selectors.** These features, used with an exsiting class or a placeholder, generate *more* compiled CSS than any of the others.
 
-**Bottom line?** Writing CSS components with a shared base class will likely produce leaner, DRY-er compiled CSS.
+**Bottom line?** Writing CSS components with a shared base class will likely produce leaner, DRY-er compiled CSS. Making use of streamlined SCSS will keep your SCSS DRY as well.
 
 ## Feedback
 
